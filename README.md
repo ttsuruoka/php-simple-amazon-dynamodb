@@ -2,6 +2,10 @@ What is SimpleAmazon
 ====================
 
 A simple PHP interface to Amazon Web Services API.
+It is easy to learn and use, unlike other large and complex libraries.
+
+ * Small and fast
+ * Not require PEAR
 
 How to use
 ----------
