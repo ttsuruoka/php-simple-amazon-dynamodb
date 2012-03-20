@@ -18,10 +18,13 @@ class SimpleAmazonSTS
 
     const USER_AGENT = 'SimpleAmazonSTS/1.0';
 
-    public function __construct($access_key_id, $secret_access_key)
+    public function __construct($access_key_id, $secret_access_key, $options = array())
     {
         $this->access_key_id = $access_key_id;
         $this->secret_access_key = $secret_access_key;
+        foreach ($options as $k => $v) {
+            $this->{$k} = $v;
+        }
     }
 
     public static function urlencode($string)
