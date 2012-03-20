@@ -29,8 +29,7 @@ Developer Documentation
 
 ### AWS Security Token Service
 
- * API Reference
-   * http://docs.amazonwebservices.com/STS/latest/APIReference/
+* API Reference: http://docs.amazonwebservices.com/STS/latest/APIReference/
 
 License
 -------
