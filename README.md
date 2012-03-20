@@ -18,6 +18,16 @@ echo $r['GetSessionTokenResult']['Credentials']['SecretAccessKey'];
 echo $r['GetSessionTokenResult']['Credentials']['SessionToken'];
 ```
 
+### Amazon DynamoDB
+
+```php
+<?php
+$db = new SimpleAmazonDynamoDB(STS_ACCESS_KEY_ID, STS_SECRET_ACCESS_KEY, STS_SESSION_TOKEN);
+$r = $db->call('ListTables');
+
+var_dump($r['TableNames']);
+```
+
 Requirements
 ------------
 
@@ -29,7 +39,11 @@ Developer Documentation
 
 ### AWS Security Token Service
 
-* API Reference: http://docs.amazonwebservices.com/STS/latest/APIReference/
+* [API Reference](http://docs.amazonwebservices.com/STS/latest/APIReference/)
+
+### Amazon DynamoDB
+
+* [Operations in Amazon DynamoDB](http://docs.amazonwebservices.com/amazondynamodb/latest/developerguide/operationlist.html)
 
 License
 -------
